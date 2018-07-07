@@ -1,6 +1,15 @@
 .u-center-text {
   text-align: center; }
 
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
 *,
 *::before,
 *::after {
@@ -72,6 +81,16 @@ body {
     transform: skewY(3deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+.heading-tertiary {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .btn::after {
   display: inline-block;
   content: "";
@@ -106,6 +125,25 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn-text:link,
+.btn-text:visited {
+  color: #55c57a;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 0.1rem solid #55c57a;
+  padding: .3rem;
+  transition: all .4s; }
+  .btn-text:link:hover,
+  .btn-text:visited:hover {
+    background-color: #55c57a;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); }
+  .btn-text:link:active,
+  .btn-text:visited:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transform: translateY(0); }
 
 .section-about {
   background-color: #f7f7f7;
