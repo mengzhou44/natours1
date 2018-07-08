@@ -1,14 +1,17 @@
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
-@import "./abstracts/utilities";
+
 
 @import "./base/base";
 @import "./base/animation";
 @import "./base/typography";
+@import "./base/utilities";
 
 @import "./css-components/button";
+@import "./css-components/card";
 @import "./css-components/composition";
 @import "./css-components/feature-box";
+
 
 @import "./components/home";
 
