@@ -33,10 +33,46 @@ export default (props) => {
                             <a href="#" className="btn-text">Learn more&rarr;</a>
                         </div>
                         <div className="col-1-of-2">
-
+                            <div className="composition">
+                                <img src="img/nat-1-large.jpg" alt="photo1" className="composition__photo  composition__photo--p1" />
+                                <img src="img/nat-2-large.jpg" alt="photo2" className="composition__photo  composition__photo--p2" />
+                                <img src="img/nat-3-large.jpg" alt="photo3" className="composition__photo  composition__photo--p3" />
+                            </div>
                         </div>
                     </div>
 
+                </section>
+
+                <section className="section-features">
+                  
+                    <div className="row">
+                        <div class="col-1-of-4">
+                            <div className="feature-box">
+                            <i className="icon-basic-world" />
+                            <h3 className="heading-tertiary">
+                               Explore the wolrd
+                            </h3>
+                             <p className="feature-text-box">
+                             ipsum dolor, sit amet consectetur adipisicing elit. Natus voluptas ea necessitatibus corrupti fugiat delectus ullam harum, minus unde aperiam minima excepturi. Enim, voluptates architecto. Magni error temporibus asperiores dolor.
+            
+                            </p>
+                            </div>
+                        </div>
+
+                        <div class="col-1-of-4">
+                            <div className="feature-box">
+                            </div>
+                        </div>
+                        <div class="col-1-of-4">
+                            <div className="feature-box">
+                            </div>
+                        </div>
+
+                        <div class="col-1-of-4">
+                            <div className="feature-box">
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </main>
         </div>
