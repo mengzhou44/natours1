@@ -252,7 +252,91 @@ export default (props) => {
                     <a href="#" className="btn-text">Read all stories &rarr;</a>
                 </div>
                 </section>
+                <section className="section-book">
+                   <div className="row">
+                   <div className="book">
+                        <div className="book__form">
+                        <div class="u-margin-bottom-medium">
+                                    <h2 className="heading-secondary">
+                                        Start booking now
+                                    </h2>
+                                </div>
+                        <form action="#" className="form">
+                           <div className="form__group">
+                              <input type="text" className="form__input" placeholder="Full Name"  required id="name" />
+                              <label htmlFor="name"  className="form__label">Full name</label>
+                           </div>
+
+                            <div className="form__group">
+                              <input type="email" className="form__input" placeholder="Email"  required id="email" />
+                              <label htmlFor="email"  className="form__label">Email</label>
+                           </div>
+
+                              <div className="form__group u-margin-bottom-medium">
+                                    <div className="form__radio-group">
+                                        <input type="radio" className="form__radio-input" id="small" name="size" />
+                                        <label for="small" className="form__radio-label">
+                                            <span className="form__radio-button"></span>
+                                            Small tour group
+                                        </label>
+                                    </div>
+
+                                    <div className="form__radio-group">
+                                        <input type="radio" className="form__radio-input" id="large" name="size" />
+                                        <label for="large" className="form__radio-label">
+                                            <span className="form__radio-button"></span>
+                                            Large tour group
+                                        </label>
+                                    </div>
+                             </div>
+                                
+                             <div className="form__group">
+                                    <button className="btn btn--green">Next step &rarr;</button>
+                                </div>
+                        </form>
+                        </div>
+                   </div>
+                   </div>
+            </section>
             </main>
+          <footer className="footer">
+             <div className="footer__logo-box">
+               <img src="img/logo-green-2x.png" alt="" className="footer__logo" />
+             </div>
+             <div className="row">
+             <div className="col-1-of-2">
+                <div className="footer__navigation">
+                 <ul className="footer__list">
+                    <li className="footer__item">
+                         <a href="#" className="footer__link">Company</a>
+                    </li>
+                    <li className="footer__item">
+                         <a href="#" className="footer__link">Contact</a>
+                    </li>
+                    <li className="footer__item">
+                         <a href="#" className="footer__link">Career</a>
+                    </li>
+                    <li className="footer__item">
+                         <a href="#" className="footer__link">Privacy</a>
+                    </li>
+                    <li className="footer__item">
+                         <a href="#" className="footer__link">Terms</a>
+                    </li>
+                 </ul>
+                 </div>
+             </div>
+             <div className="col-1-of-2">
+                <p className="footer__copyright">
+                       Built by <a href="#" className="footer__link">Jonas Schmedtmann</a> for his online course <a href="#" class="footer__link">Advanced CSS and Sass</a>.
+                        Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal
+                        and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas
+                        Schmedtmann, is of course highly appreciated!
+                </p>
+             </div>
+             </div>
+           
+          </footer>
+            
         </div>
 
     );
