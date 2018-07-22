@@ -3,6 +3,32 @@ import React from 'react';
 export default (props) => {
     return (
         <div>
+            <div className="navigation">
+               <input type="checkbox" className="navigation__checkbox"  id="nav-toggle"/>
+               <label htmlFor="nav-toggle"  className="navigation__button">Menu </label>
+               <div className="navigation__background">
+                  &nbsp;
+               </div>
+               <nav className="navigation__nav">
+               <ul className="navigation__list">
+                  <li className="navigation__item">
+                     <a href="" className="navigation__link"><span> 01 </span>About Natours</a>
+                  </li>
+                  <li className="navigation__item">
+                  <a href="" className="navigation__link"><span> 02 </span>Your Benefits</a>
+                  </li>
+                  <li className="navigation__item">
+                  <a href="" className="navigation__link"><span> 03 </span>Popular Tours</a>
+                  </li>
+                  <li className="navigation__item">
+                  <a href="" className="navigation__link"><span> 04 </span>Stories</a>
+                  </li>
+                  <li className="navigation__item">
+                  <a href="" className="navigation__link"><span> 05 </span>Book now</a>
+                  </li>
+               </ul>
+               </nav>
+            </div>
             <div className='header'>
                 <div className="header--logo-box">
                     <img src="img/logo-white.png" alt="logo" className="header--logo" />
@@ -256,7 +282,7 @@ export default (props) => {
                    <div className="row">
                    <div className="book">
                         <div className="book__form">
-                        <div class="u-margin-bottom-medium">
+                        <div className="u-margin-bottom-medium">
                                     <h2 className="heading-secondary">
                                         Start booking now
                                     </h2>
@@ -275,7 +301,7 @@ export default (props) => {
                               <div className="form__group u-margin-bottom-medium">
                                     <div className="form__radio-group">
                                         <input type="radio" className="form__radio-input" id="small" name="size" />
-                                        <label for="small" className="form__radio-label">
+                                        <label htmlFor="small" className="form__radio-label">
                                             <span className="form__radio-button"></span>
                                             Small tour group
                                         </label>
@@ -283,7 +309,7 @@ export default (props) => {
 
                                     <div className="form__radio-group">
                                         <input type="radio" className="form__radio-input" id="large" name="size" />
-                                        <label for="large" className="form__radio-label">
+                                        <label htmlFor="large" className="form__radio-label">
                                             <span className="form__radio-button"></span>
                                             Large tour group
                                         </label>
@@ -327,7 +353,7 @@ export default (props) => {
              </div>
              <div className="col-1-of-2">
                 <p className="footer__copyright">
-                       Built by <a href="#" className="footer__link">Jonas Schmedtmann</a> for his online course <a href="#" class="footer__link">Advanced CSS and Sass</a>.
+                       Built by <a href="#" className="footer__link">Jonas Schmedtmann</a> for his online course <a href="#" className="footer__link">Advanced CSS and Sass</a>.
                         Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal
                         and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas
                         Schmedtmann, is of course highly appreciated!
