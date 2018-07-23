@@ -5,7 +5,10 @@ export default (props) => {
         <div>
             <div className="navigation">
                <input type="checkbox" className="navigation__checkbox"  id="nav-toggle"/>
-               <label htmlFor="nav-toggle"  className="navigation__button">Menu </label>
+               <label htmlFor="nav-toggle"  className="navigation__button">
+                  <span className="navigation__icon">
+                  </span>
+               </label>
                <div className="navigation__background">
                   &nbsp;
                </div>
@@ -38,7 +41,7 @@ export default (props) => {
                         <span className="heading-primary--main">Outdoors </span>
                         <span className="heading-primary--sub">is where life happens</span>
                     </h1>
-                    <a href="#" className="btn btn--white">Discover Tours</a>
+                    <a href="#section-tours" className="btn btn--white">Discover Tours</a>
                 </div>
             </div>
             <main>
@@ -121,7 +124,7 @@ export default (props) => {
                     </div>
                 </section>
 
-                <section className="section-tours">
+                <section className="section-tours" id="section-tours">
                     <div className="u-center-text">
                         <h2 className="heading-secondary u-margin-bottom-medium"> Most popular tours</h2>
                     </div>
@@ -363,6 +366,28 @@ export default (props) => {
            
           </footer>
             
+            <div className="popup" id="popup">
+            <div className="popup__content">
+              <div className="popup__left">
+                   <img src="img/nat-8.jpg" alt="Tour photo" className="popup__img" />
+                    <img src="img/nat-9.jpg" alt="Tour photo" className="popup__img" />
+              </div>
+              <div className="popup__right">
+                <a href="#section-tours" className="popup__close">&times;</a>
+                 <h2 className="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h3 className="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                    <p className="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit
+                        amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim
+                        sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget
+                        gravida cum sociis natoque penatibus et. Proin fermentum leo vel orci porta non pulvinar neque laoreet.
+                     
+                    </p>
+                    <a href="#" className="btn btn--green">Book now</a>
+              </div>
+            </div>
+            </div>
         </div>
 
     );
