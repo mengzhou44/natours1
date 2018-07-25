@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 *,
 *::before,
 *::after {
@@ -7,10 +24,22 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 30%; } }
 
 body {
   box-sizing: border-box;
   padding: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0rem; } }
 
 @keyframes moveInLeft {
   0% {
@@ -47,12 +76,19 @@ body {
     font-weight: 400;
     letter-spacing: 3.5rem;
     animation: moveInLeft 1s ease-in; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--main {
+        font-size: 5rem;
+        letter-spacing: 1.5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.74rem;
     animation: moveInRight 1s ease-out; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -65,6 +101,9 @@ body {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
   .heading-secondary:hover {
     transform: skewY(3deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -419,7 +458,7 @@ body {
   z-index: 3000;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -436,7 +475,7 @@ body {
     overflow: hidden;
     transition: all .4s .2s;
     opacity: 0;
-    transform: scale(0.5); }
+    transform: scale(0); }
   .popup__left {
     width: 33%;
     display: table-cell; }
